@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="overflow-y-scroll">
+      <body className={`${inter.className} `}>{children}</body>
     </html>
   );
 }

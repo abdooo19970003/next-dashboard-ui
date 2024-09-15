@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.react-calendar {
+  width: 100% !important;
+  font: inherit !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.react-calendar__tile {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.react-calendar__tile--active {
+  background: #1d4443 !important;
+  font-weight: 600 !important;
+}
+.react-calendar__navigation {
+  font-weight: 550 !important;
+}
+.react-calendar__month-view__weekdays {
+  color: #1d4443 !important ;
+  text-shadow: 2px 2px 5px #fcfcfc, -2px -2px 5px #fcfcfc !important;
+}
+.react-calendar__tile--now {
+  background: #ccaf71a2 !important;
+}
